@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Basic suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="Basic functional test(failed)">
+    <groups>
+      <run>
+        <include name="performance"/>
+        <include name="smoke"/>
+        <exclude name="regression"/>
+      </run>
+    </groups>
+    <classes>
+      <class name="QAFox.CalendrHandeling.Demo4">
+        <methods>
+          <include name="feature1"/>
+        </methods>
+      </class> <!-- QAFox.CalendrHandeling.Demo4 -->
+    </classes>
+  </test> <!-- Basic functional test(failed) -->
+</suite> <!-- Failed suite [Basic suite] -->

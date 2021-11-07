@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Basic suite">
+<test name="Basic functional test" verbose="2">
+
+<groups>
+         <run>
+            <include name = "performance" />
+            <include name = "smoke" />
+            <exclude name = "regression" />
+         </run>
+      </groups>
+<classes>
+<class name="QAFox.CalendrHandeling.Demo4"/>
+
+</classes>
+</test>
+<test name="Basic smoke test" verbose="2">
+
+<groups>
+         <run>
+         
+            <include name = "regression" />
+         </run>
+      </groups>
+<classes>
+<class name="QAFox.CalendrHandeling.Demo4"/>
+
+</classes>
+</test>
+<!--  Default test  -->
+</suite>
+<!--  Default suite  -->
